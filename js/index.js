@@ -1,22 +1,5 @@
 
 window.addEventListener("load",()=>{
-// -- Seteando #Home Background por Canvas -- //
-	let canvas = document.getElementById("home-bg");
-	canvas.style.height="100vh";
-	canvas.style.width="100vw";
-	canvas.style.maxWidth="100%";
-
-	let ctx = canvas.getContext("2d");
-	let img = new Image();
-	img.src="img/bg.jpg";
-	let particles = [];
-	function drawBg() {
-		canvas.width = img.width*1;
-		canvas.height = img.height*1;
-		ctx.drawImage(img,0,0);
-	}
-
-	img.onload = drawBg;
 
 // -------- INTERACTIVIDAD -------- //
 
@@ -47,7 +30,7 @@ window.addEventListener("load",()=>{
 	let navLinks = document.querySelectorAll("header nav a");
 	let section = document.querySelectorAll("body > section")
 	let sectionY=[];
-	section.forEach((val,i)=>sectionY[i]=val.getBoundingClientRect().y);
+	section.forEach((val,i)=>sectionY[i]=val.getBoundingClientRect().top);
 	function goTo(seccion){
 		window.scrollTo(0,sectionY[seccion]);
 		//Array.from(section)[seccion].scrollIntoView();

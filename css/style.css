@@ -179,6 +179,7 @@ section .container div.title > h2.animate {
 	overflow-y: hidden;
 	position: relative;
 }
+.proyecto:nth-child(4) .img img { height: 100%; }	
 .proyecto .img.dark { background-color: #2c3e50 }
 .proyecto .img img { width: 100%; height: auto; z-index: 10; position: absolute;}
 .proyecto .img:hover::before { content:""; display: block; position: absolute; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,.175); border-radius: 1px; z-index:2;}
@@ -332,11 +333,12 @@ footer .highlight {
 	margin-left: .5em;
 }
 /* --- MEDIA QUERIES --- */
-@media only screen and (max-width: 949px){
+@media only screen and (max-width: 979px){
 	#home h1 { font-size: 4.25em; }
 	.container { padding: 0 10px; }
 	.proyecto { width: 48.75%; }
 	.proyecto:nth-child(9){display: none;}
+	.proyecto:nth-child(4) .img img { height: auto; }	
 }
 /*@media only screen and (max-width: 767px){}*/
 @media only screen and (max-width: 610px){
@@ -344,6 +346,8 @@ footer .highlight {
 	#proyectos { width: 100%; }
 	#contact .email { font-size: .75em; }
 	#about .profile-img, #about .about { width: 100%; float: none; padding: .8em; }
+	#proyectos .proyecto { max-width: 500px; margin-left: auto;  margin-right: auto;}
+	.proyecto:nth-child(4) .img img { margin-top: -60px; }
 	header nav { display: none; position: absolute; top: 50px; left: 0; width: 100%; background-color: #252934; color: #fff; opacity: 0; transition: all 1s ease; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.13), 0 2px 10px 0 rgba(0,0,0,.1); z-index: -1;}
 	header nav.show {display: block; opacity: 1;}
 	header nav li { display: block; border-bottom: .5px solid #333; margin: 0; padding: 0 1em; }
@@ -352,4 +356,7 @@ footer .highlight {
 	#to-menu::after { content: ""; display: table; clear: both; outline: none; border: none; }
 	.proyecto:nth-child(9){display: initial;}
 	.proyecto p { padding: 0; }
+}
+@media only screen and (max-width: 420px){
+	.proyecto:nth-child(4) .img img { margin-top: 0px; }
 }
