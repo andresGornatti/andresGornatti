@@ -155,7 +155,9 @@ window.addEventListener("load",()=>{
 				tool.setAttribute("class","tool");
 			if (typeof toolName === "string"){
 				let img = new Image();
-				if(tools==="ajax"){ img.src=`img/tools/${toolName}.jpg`;} else {	img.src=`img/tools/${toolName}.png`; }
+				if(tools==="react" || tools==="redux" || tools==="ajax"){
+				img.src=`img/tools/${toolName}.jpg`;
+				} else { img.src=`img/tools/${toolName}.png`; }
 				img.setAttribute("title",toolName); 
 				tool.appendChild(img);
 				toolsDiv.appendChild(tool);
@@ -163,7 +165,7 @@ window.addEventListener("load",()=>{
 				toolName.forEach((val,i)=>{
 				tool = document.createElement("div");
 				tool.setAttribute("class","tool");
-				if(tools[i]==="ajax"){
+				if(tools[i]==="react" || tools[i]==="redux" || tools[i]==="ajax"){
 				let img = new Image();	
 				img.src=`img/tools/${toolName[i]}.jpg`;
 				img.setAttribute("title",toolName[i]);
@@ -183,13 +185,13 @@ window.addEventListener("load",()=>{
 
 		addTool(["html","css","js","jquery","ajax","php","mysql"],1);	// PuraMistura
 		addTool("js",2);												// TheGameColor
-		addTool(["jquery","css","html"],3);								// Maqueta1
-		addTool("js",4);												// SleepTime
-		addTool(["js","css","html"],5);									// Layouts
-		addTool(["css","jquery"],6);									// Maqueta2
-		addTool(["html","css","js","jquery"],7);						// CV2016
-		addTool("bootstrap",8);											// MaquetaB1
-		addTool("bootstrap",9);											// MaquetaB2
+		addTool(["react","redux","js"],3);								// TodoList React+Redux 
+		addTool(["jquery","css","html"],4);								// Maqueta1
+		addTool(["react","redux","js"],5);								// RoboFriends CourseExcercise
+		addTool(["js","css","html"],6);									// Layouts
+		addTool(["css","jquery"],7);									// Maqueta2
+		addTool(["html","css","js","jquery"],8);						// CV2016
+		addTool("bootstrap",9);											// MaquetaB1
 
 
 		// -- Movimiento de Imagen de Proyecto -- //
