@@ -184,14 +184,14 @@ window.addEventListener("load",()=>{
 		}
 
 		addTool(["html","css","js","jquery","ajax","php","mysql"],1);	// PuraMistura
-		addTool("js",2);												// TheGameColor
-		addTool(["react","redux","js"],3);								// TodoList React+Redux 
-		addTool(["jquery","css","html"],4);								// Maqueta1
+		addTool(["react","js"],2);										// Github Finder
+		addTool(["react", "node", "postgresql"],3);						// SmartBrain CourseExcerscise
+		addTool(["react","redux","js"],4);								// TodoList React+Redux 
 		addTool(["react","redux","js"],5);								// RoboFriends CourseExcercise
-		addTool(["js","css","html"],6);									// Layouts
-		addTool(["css","jquery"],7);									// Maqueta2
-		addTool(["html","css","js","jquery"],8);						// CV2016
-		addTool("bootstrap",9);											// MaquetaB1
+		addTool("js",6);												// TheGameColor
+		addTool(["jquery","css","html"],7);								// Maqueta1
+		addTool(["js","css","html"],8);									// Layouts
+		addTool(["css","jquery"],9);									// Maqueta2
 
 
 		// -- Movimiento de Imagen de Proyecto -- //
