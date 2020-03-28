@@ -183,10 +183,10 @@ window.addEventListener("load",()=>{
 			}
 		}
 
-		addTool(["html","css","js","jquery","ajax","php","mysql"],1);	// PuraMistura
-		addTool(["react","js"],2);										// Github Finder
+		addTool(["react","js"],1);										// Github Finder
+		addTool(["react","redux","js","node","mongodb"],2);				// TodoList React+Redux 
 		addTool(["react", "node", "postgresql"],3);						// SmartBrain CourseExcerscise
-		addTool(["react","redux","js"],4);								// TodoList React+Redux 
+		addTool(["html","css","js","jquery","ajax","php","mysql"],4);	// PuraMistura
 		addTool(["react","redux","js"],5);								// RoboFriends CourseExcercise
 		addTool("js",6);												// TheGameColor
 		addTool(["jquery","css","html"],7);								// Maqueta1
